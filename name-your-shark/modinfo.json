@@ -1,0 +1,14 @@
+{
+  "name": "Name Your Shark",
+  "author": "Dinnerbone",
+  "description": "Gives each shark a random name from a preconfigured list",
+  "version": "1.0",
+  "license": "MIT",
+  "icon": "icon.png",
+  "banner": "banner.png",
+  "gameVersion": "1.0",
+  "requiredByAllPlayers": true,
+  "updateUrl": "https://www.raftmodding.com/api/v1/mods/YOUR-MOD-SLUG-HERE/version.txt",
+  "isModPermanent": false,
+  "excludedFiles": []
+}
