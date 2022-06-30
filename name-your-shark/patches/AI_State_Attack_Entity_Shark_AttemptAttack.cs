@@ -6,7 +6,7 @@ public static class AI_State_Attack_Entity_Shark_AttemptAttack
 {
     static void Prefix(AI_StateMachine_Shark ___stateMachineShark)
     {
-        if (Semih_Network.IsHost)
+        if (Raft_Network.IsHost)
         {
             var nametag = ___stateMachineShark.GetComponentInChildren<TextMeshPro>();
             if (nametag != null)
@@ -18,7 +18,7 @@ public static class AI_State_Attack_Entity_Shark_AttemptAttack
 
     static void Postfix()
     {
-        if (Semih_Network.IsHost)
+        if (Raft_Network.IsHost)
         {
             NameYourSharkMod.Instance.SharkCurrentlyAttacking = null;
         }
