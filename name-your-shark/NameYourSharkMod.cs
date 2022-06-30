@@ -98,7 +98,7 @@ public class NameYourSharkMod : Mod
         var message = RAPI.ListenForNetworkMessagesOnChannel(CHANNEL_ID);
         if (message != null)
         {
-            if (message.message.Type == MESSAGE_TYPE_SET_NAME && !Semih_Network.IsHost)
+            if (message.message.Type == MESSAGE_TYPE_SET_NAME && !Raft_Network.IsHost)
             {
                 if (message.message is UpdateSharkNameMessage msg)
                 {
@@ -124,7 +124,7 @@ public class NameYourSharkMod : Mod
 
         var text = nameTag.GetComponentInChildren<TextMeshPro>();
 
-        if (Semih_Network.IsHost)
+        if (Raft_Network.IsHost)
         {
             EnsureWorldLoaded();
             text.text = Names.Take();

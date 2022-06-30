@@ -6,7 +6,7 @@ public static class AI_NetworkBehavior_Shark_Serialize_Update_Animal_Patch
 {
     static void Postfix(AI_NetworkBehavior_Shark __instance)
     {
-        if (Semih_Network.IsHost)
+        if (Raft_Network.IsHost)
         {
             var nametag = __instance.stateMachineShark.GetComponentInChildren<TextMeshPro>();
             if (nametag == null)
